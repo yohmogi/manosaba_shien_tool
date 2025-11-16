@@ -4,6 +4,29 @@ import os
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
+def load_default_speaker_data():
+    """
+    デフォルトの発言者データを辞書形式で返します。
+    """
+    return {
+        "エマ": {"color": "ff69b4","length": 3},
+        "ヒロ": {"color": "dc143c","length": 3},
+        "アンアン": {"color": "6a5acd","length": 3},
+        "シェリー": {"color": "6495ed","length": 3},
+        "ハンナ": {"color": "9acd32","length": 3},
+        "ノア": {"color": "87cefa","length": 3},
+        "レイア": {"color": "ff7f50","length": 3},
+        "ミリア": {"color": "ffa500","length": 3},
+        "ココ": {"color": "ff8c00","length": 3},
+        "マーゴ": {"color": "8a2be2","length": 3},
+        "ナノカ": {"color": "696969","length": 3},
+        "アリサ": {"color": "800000","length": 3},
+        "メルル": {"color": "dda0dd","length": 3},
+        "シロ": {"color": "867ba9","length": 3},
+        "ユキ": {"color": "e6e6fa","length": 3},
+        "ゴクチョー": {"color": "778899","length": 3},
+    }
+
 def load_speaker_data(csv_filepath):
     """
     CSVファイルから発言者データを読み込み、辞書形式で返します。
@@ -115,8 +138,9 @@ def main_gui():
 
         try:
             # 5. CSVを読み込む
+            #speaker_data = load_default_speaker_data()
             speaker_data = load_speaker_data(csv_filename)
-            
+
             # CSVの読み込みに失敗した場合
             if speaker_data is None:
                 script_dir = os.path.dirname(os.path.abspath(__file__))

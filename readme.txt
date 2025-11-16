@@ -1,5 +1,13 @@
 
+
 # 会話テキスト置換アプリ（replace_app.py）
+
+---
+
+## 📦 ダウンロード
+
+最新のWindows用実行ファイル（exe）は、[GitHub Releases](https://github.com/yohmogi/manosaba_shien_tool/releases/) からダウンロードできます。
+
 
 > テキストファイルの発言者名ハイライトやカスタムリンク変換を、簡単操作で行えるGUIツールです。
 
